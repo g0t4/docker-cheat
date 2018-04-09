@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "build-image": "docker build -t weshigbee/cheat .",
+    "cheat-help": "docker run --rm -it weshigbee/cheat --help",
+    "cheat-cheat": "docker run --rm -it weshigbee/cheat cheat",
+    "build-run": "npm run build-image && npm run cheat-cheat"
+  }
+}
